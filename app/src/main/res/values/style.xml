@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyDatePickerTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <!-- Background -->
+        <item name="android:windowBackground">#ffffff</item>
+        <item name="android:colorBackground">#ffffff</item>
+
+        <!-- Spinner / numbers text color -->
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:textColorSecondary">#000</item>
+
+        <!-- Accent (highlighted text like selected number) -->
+        <item name="colorAccent">#BB86FC</item>
+    </style>
+
+</resources>

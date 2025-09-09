@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "596302359713",
+    "project_id": "attd-b1575",
+    "storage_bucket": "attd-b1575.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596302359713:android:a97973cefbf591a36654e0",
+        "android_client_info": {
+          "package_name": "com.developer.attd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtyk-ujmPUZuGg-pIf-qlM1Sv-S41oluc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

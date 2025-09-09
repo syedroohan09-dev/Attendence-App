@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, User"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logout"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnLogout"
+                app:tint="#1dbf73" />
+        </RelativeLayout>
+
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fri, 29 Aug 2025"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/green_bg"
+            android:backgroundTint="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:45 AM"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/outline_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: LATE"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fira"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/tv_startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="START: 9:13 AM"
+                    android:fontFamily="@font/rb"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="END: 5:30 PM"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/rb"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Attendance Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Mark Attendance"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/green_bg"
+            android:backgroundTint="#1dbf73"
+            android:elevation="6dp" />
+
+        <!-- Request Leave Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLeave"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Request Leave"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:background="@drawable/btn_gradient_alt"
+            android:elevation="6dp" />
+
+        <!-- My Attendance Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMyAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="My Attendance"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/green_bg"
+            android:backgroundTint="#000"
+            android:elevation="6dp" />
+
+        <!-- Monthly Report Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Monthly Report"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:backgroundTint="#000"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/green_bg"
+            android:elevation="6dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Search History"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:backgroundTint="#000"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/green_bg"
+            android:elevation="6dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:backgroundTint="#000"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/green_bg"
+            android:layout_marginBottom="20dp"
+            android:elevation="6dp" />
+
+        <!-- Logout Button -->
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnLogout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:text="Logout"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:background="@drawable/btn_reject"-->
+<!--            android:elevation="6dp" />-->
+
+    </LinearLayout>
+</ScrollView>
