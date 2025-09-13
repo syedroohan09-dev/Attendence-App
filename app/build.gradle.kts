@@ -37,6 +37,7 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(platform("com.google.firebase:firebase-bom:34.2.0"))
+    implementation("androidx.work:work-runtime:2.9.0")
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.auth)
