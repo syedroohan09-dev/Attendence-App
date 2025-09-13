@@ -1,6 +1,9 @@
 package com.developer.attd;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -274,6 +277,17 @@ public class Dashboard extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             return "Present";
+        }
+    }
+
+    public void getWifiSSID(){
+        WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        if (wifiManager.isWifiEnabled()) {
+            WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+            String ssid = wifiInfo.getSSID();
+            if(ssid.equalsIgnoreCase("StormFiber-3B60")){
+                markAttendance(mAuth.getCurrentUser().getUid());
+            }
         }
     }
 
