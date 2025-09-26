@@ -16,6 +16,9 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
+import androidx.work.WorkRequest;
 
 import com.developer.attd.Utils.PrefsUtils;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -83,10 +86,13 @@ public class Dashboard extends AppCompatActivity {
             btnAttendance.setText("Check-IN");
         }
 
+//        WorkRequest request = new OneTimeWorkRequest.Builder(BackgroundWorker.class).build();
+//        WorkManager.getInstance(this).enqueue(request);
+
         // Show user email
         FirebaseUser user = mAuth.getCurrentUser();
         if (user != null) {
-            textEmail.setText("Welcome, \n" + user.getEmail());
+            textEmail.setText("Logged in as, \n" + user.getEmail());
         }
 
         // Update date
