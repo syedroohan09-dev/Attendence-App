@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
         tools:ignore="CoarseFineLocation" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
         tools:ignore="CoarseFineLocation" />
 
     <application
@@ -17,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Attd"
         tools:targetApi="31">
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
         <activity
             android:name=".History"
             android:exported="false" />
