@@ -79,7 +79,6 @@
             android:text="General Shift Timmings"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center"
-            android:fontFamily="@font/rb"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
@@ -102,7 +101,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="START"
-                    android:fontFamily="@font/rb"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -113,7 +111,6 @@
                     android:text="END: 5:30 PM"
                     android:layout_marginTop="10dp"
                     android:layout_alignParentEnd="true"
-                    android:fontFamily="@font/rb"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -128,7 +125,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="HALF DAY"
-                    android:fontFamily="@font/rb"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -139,7 +135,6 @@
                     android:text="12:00"
                     android:layout_marginTop="10dp"
                     android:layout_alignParentEnd="true"
-                    android:fontFamily="@font/rb"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -154,7 +149,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="END"
-                    android:fontFamily="@font/rb"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
@@ -165,7 +159,6 @@
                     android:text="END: 5:30 PM"
                     android:layout_marginTop="10dp"
                     android:layout_alignParentEnd="true"
-                    android:fontFamily="@font/rb"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -183,10 +176,9 @@
                 android:id="@+id/tv_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Status: LATE"
+                android:text="ON TIME"
                 android:textStyle="bold"
                 android:layout_gravity="center"
-                android:fontFamily="@font/fira"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
 
@@ -198,7 +190,7 @@
                     android:id="@+id/tv_startTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="START: 9:13 AM"
+                    android:text="-------------"
                     android:fontFamily="@font/rb"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
@@ -207,7 +199,7 @@
                     android:id="@+id/tv_endTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="END: 5:30 PM"
+                    android:text="-------------"
                     android:layout_alignParentEnd="true"
                     android:fontFamily="@font/rb"
                     android:textColor="@color/white"
@@ -252,19 +244,6 @@
             android:backgroundTint="#000"
             android:elevation="6dp" />
 
-        <!-- Monthly Report Button -->
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnReport"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="Monthly Report"
-            android:textColor="#FFFFFF"
-            android:textAllCaps="false"
-            android:backgroundTint="#000"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/green_bg"
-            android:elevation="6dp" />
-
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnHistory"
             android:layout_width="match_parent"
@@ -278,17 +257,29 @@
             android:elevation="6dp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSettings"
+            android:id="@+id/btnReport"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:text="Settings"
+            android:text="Monthly Report"
             android:textColor="#FFFFFF"
             android:textAllCaps="false"
             android:backgroundTint="#000"
             android:layout_marginTop="10dp"
             android:background="@drawable/green_bg"
-            android:layout_marginBottom="20dp"
             android:elevation="6dp" />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnSettings"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:text="Settings"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:backgroundTint="#000"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/green_bg"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:elevation="6dp" />-->
 
         <!-- Logout Button -->
 <!--        <androidx.appcompat.widget.AppCompatButton-->

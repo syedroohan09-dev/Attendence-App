@@ -45,8 +45,8 @@ import java.util.Map;
 
 public class Dashboard extends AppCompatActivity {
     private TextView textEmail, textDate, textTime, tv_status, tv_startTime, tv_endTime, tv_start_shift_time, tv_halfDay_shift_time, tv_end_shift_time;
-    private Button btnAttendance, btnLeave, btnMyAttendance, btnReport, btnHistory, btnSettings, btn_settings;
-    private ImageView btnLogout;
+    private Button btnAttendance, btnLeave, btnMyAttendance, btnReport, btnHistory;
+    private ImageView btnLogout, btn_settings;
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
     private Handler handler = new Handler();
